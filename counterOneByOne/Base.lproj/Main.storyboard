@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,69 +13,43 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="counterOneByOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="X9k-V3-0dz">
-                                <rect key="frame" x="24" y="44" width="380" height="848"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6x-OW-bYz" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="380" height="423.66666666666669"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QD-PS-71M">
-                                                <rect key="frame" x="45.666666666666686" y="193.66666666666663" width="289" height="230"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="0iV-Ws-9dN"/>
-                                                    <constraint firstAttribute="height" constant="230" id="MdC-MP-H8D"/>
-                                                </constraints>
-                                                <string key="text">Значение  счётчика: 
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QD-PS-71M">
+                                <rect key="frame" x="319" y="165" width="288.33333333333326" height="98"/>
+                                <string key="text">Значение  счётчика: 
 32 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="7QD-PS-71M" secondAttribute="bottom" id="Smh-0B-gps"/>
-                                            <constraint firstItem="7QD-PS-71M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o6x-OW-bYz" secondAttribute="top" constant="24" id="aT6-q6-atX"/>
-                                            <constraint firstItem="7QD-PS-71M" firstAttribute="centerX" secondItem="o6x-OW-bYz" secondAttribute="centerX" id="ysV-bn-GJf"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Kj-C7-j5d" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="424.66666666666674" width="380" height="423.33333333333326"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-Rd-eSf">
-                                                <rect key="frame" x="40" y="287.33333333333331" width="300" height="96"/>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Exs-P8-mHb"/>
-                                                    <constraint firstAttribute="height" constant="96" id="PP8-H7-gIx"/>
-                                                </constraints>
-                                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Count me!" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XIY-bb-xG8"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ShB-Rd-eSf" secondAttribute="bottom" constant="40" id="1qQ-1A-U5B"/>
-                                            <constraint firstItem="ShB-Rd-eSf" firstAttribute="centerX" secondItem="5Kj-C7-j5d" secondAttribute="centerX" id="4BY-Yk-OBq"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-Rd-eSf">
+                                <rect key="frame" x="313" y="287" width="300" height="96"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Exs-P8-mHb"/>
+                                    <constraint firstAttribute="height" constant="96" id="PP8-H7-gIx"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Count me!" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XIY-bb-xG8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="X9k-V3-0dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5gJ-EY-fyG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X9k-V3-0dz" secondAttribute="bottom" id="8Tf-r2-Vfl"/>
-                            <constraint firstAttribute="trailing" secondItem="X9k-V3-0dz" secondAttribute="trailing" constant="24" id="Zz0-Bj-CBM"/>
-                            <constraint firstItem="X9k-V3-0dz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aLB-wW-Z5E"/>
+                            <constraint firstItem="ShB-Rd-eSf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7QD-PS-71M" secondAttribute="bottom" priority="999" constant="24" id="1Fp-tz-KLt"/>
+                            <constraint firstItem="7QD-PS-71M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="37t-g9-Vtx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ShB-Rd-eSf" secondAttribute="bottom" constant="24" id="IP4-NY-ZpV"/>
+                            <constraint firstItem="7QD-PS-71M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="UEb-Fj-nAX"/>
+                            <constraint firstItem="ShB-Rd-eSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dsL-S3-MwD"/>
+                            <constraint firstItem="7QD-PS-71M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w9g-YB-9TH"/>
                         </constraints>
                     </view>
                     <connections>

@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         plusOne()
         changeCounterText()
-        print(counter)
     }
     
 }
