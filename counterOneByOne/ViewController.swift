@@ -1,35 +1,32 @@
-//
-//  ViewController.swift
-//  counterOneByOne
-//
-//  Created by Maxim V. Brykov on 21.07.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var counterValueText: UILabel!
     @IBOutlet weak var buttonCountPlusOne: UIButton!
     
-    var counterValue: Int = 0
-    var defaultCounterText: String = "Значение\n счётчика:\n"
-    
+    var counter = 0
+    var counterDefualtText: String = "Значение\n счётчика:\n"
+    var counterActualText: String {
+        counterDefualtText + "\(counter)"
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        counterValueText.text = defaultCounterText + "\(counterValue)"
+        counterValueText.text = counterActualText
     }
     
-    func counterNewData() -> (Int) {
-        counterValue += 1
-        return counterValue
+    func plusOne() {
+        counter += 1
     }
     
     func changeCounterText() {
-        counterValueText.text = defaultCounterText + "\(counterNewData())"
+        counterValueText.text = counterActualText
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        plusOne()
         changeCounterText()
+        print(counter)
     }
     
 }
