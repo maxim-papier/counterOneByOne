@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,19 +13,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="counterOneByOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QD-PS-71M">
-                                <rect key="frame" x="70" y="348.33333333333331" width="288.33333333333331" height="229.33333333333331"/>
-                                <string key="text">Значение  счётчика: 
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="none" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QD-PS-71M">
+                                <rect key="frame" x="20" y="149" width="886" height="130"/>
+                                <string key="text">Значение счётчика: 
 32 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-Rd-eSf">
-                                <rect key="frame" x="64" y="772" width="300" height="96"/>
+                                <rect key="frame" x="313" y="287" width="300" height="96"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Exs-P8-mHb"/>
@@ -44,12 +44,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="ShB-Rd-eSf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7QD-PS-71M" secondAttribute="bottom" priority="999" constant="24" id="1Fp-tz-KLt"/>
                             <constraint firstItem="7QD-PS-71M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="37t-g9-Vtx"/>
+                            <constraint firstAttribute="trailing" secondItem="7QD-PS-71M" secondAttribute="trailing" constant="20" symbolic="YES" id="4Rv-48-ej3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ShB-Rd-eSf" secondAttribute="bottom" constant="24" id="IP4-NY-ZpV"/>
-                            <constraint firstItem="7QD-PS-71M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="UEb-Fj-nAX"/>
+                            <constraint firstItem="ShB-Rd-eSf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7QD-PS-71M" secondAttribute="bottom" constant="8" id="J0V-ed-S3l"/>
                             <constraint firstItem="ShB-Rd-eSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dsL-S3-MwD"/>
                             <constraint firstItem="7QD-PS-71M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w9g-YB-9TH"/>
+                            <constraint firstItem="7QD-PS-71M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="yrH-U9-mGO"/>
                         </constraints>
                     </view>
                     <connections>

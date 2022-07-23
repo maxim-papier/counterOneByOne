@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonCountPlusOne: UIButton!
     
     var counter = 0
-    var counterDefualtText: String = "Значение\n счётчика:\n"
+    let counterDefualtText: String = "Значение счётчика:\n"
     var counterActualText: String {
         counterDefualtText + "\(counter)"
     }
