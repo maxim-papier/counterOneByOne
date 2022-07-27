@@ -5,9 +5,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonCountPlusOne: UIButton!
     
     var counter = 0
-    let counterDefualtText: String = "Значение счётчика:\n"
+    let counterDefaultText: String = "Значение счётчика:\n"
     var counterActualText: String {
-        counterDefualtText + "\(counter)"
+        counterDefaultText + "\(counter)"
     }
 
     override func viewDidLoad() {
